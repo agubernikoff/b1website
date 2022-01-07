@@ -1,3 +1,48 @@
 body {
-    background: blue;
+  background: black;
+}
+.hidden {
+  display: none;
+  transition: all 2s;
+}
+.heezy {
+  color: grey;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  transition: all 2s;
+}
+.tran {
+  opacity: 1;
+  color: white;
+  text-align: center;
+  font-size: 500%;
+  font-family: "Times New Roman", Times, serif;
+  transition: all opacity color font-size 2s ease-in-out;
+  transition-delay: 2s;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 49%;
+}
+.shgif {
+  opacity: 1;
+  transition: opacity 2s;
+}
+.fade {
+  transition: opacity 2s;
+  opacity: 0;
+}
+.for-now {
+  opacity: 1;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  border-top: 0px;
+  transition: opacity 2s ease-in-out;
+  transition-delay: 2s;
+}
+.unavailable {
+  opacity: 0;
 }
