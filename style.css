@@ -46,3 +46,23 @@ img {
 .unavailable {
   opacity: 0;
 }
+.links {
+  position: absolute;
+  color: greenyellow;
+  font-size: 36pt;
+  transition-delay: 2s;
+  transition: all;
+  top: 50px;
+}
+ul {
+  color: white;
+  list-style-type: none;
+  font-size: 12pt;
+}
+a:hover {
+  font-size: 24pt;
+  color: greenyellow;
+}
+a:visited {
+  color: grey;
+}

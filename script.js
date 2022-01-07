@@ -2,6 +2,7 @@ const shimg1 = document.querySelector(".image1");
 const shgif = document.querySelector(".gif");
 const sh1 = document.querySelector(".heezy");
 const spew = document.querySelector(".for-now");
+const link = document.querySelector(".links");
 const greeting = [
   "CLICK THE IMAGE TO BEGIN",
   "WHEN THE ANIMATION STOPS CLICK THE IMAGE TO ENTER",
@@ -20,6 +21,7 @@ const start2 = function () {
   sh1.classList.add("tran");
   sh1.innerHTML = greeting[2];
   spew.classList.remove("unavailable");
+  link.classList.remove("hidden");
 };
 shimg1.addEventListener("click", function () {
   start();
