@@ -4,11 +4,13 @@ body {
 .hidden {
   display: none;
   transition: all 2s;
+  transition-delay: 2s;
 }
 .heezy {
   color: grey;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
   transition: all 2s;
 }
 .tran {
