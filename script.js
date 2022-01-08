@@ -22,6 +22,8 @@ const start2 = function () {
   sh1.innerHTML = greeting[2];
   spew.classList.remove("unavailable");
   link.classList.remove("hidden");
+  const btn = document.querySelector("button");
+  btn.removeAttribute("hidden");
 };
 shimg1.addEventListener("click", function () {
   start();
