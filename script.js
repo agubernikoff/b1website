@@ -31,3 +31,9 @@ shimg1.addEventListener("click", function () {
 shgif.addEventListener("click", function () {
   start2();
 });
+document.body.onkeydown = function (e) {
+  if (e.keyCode == 32) {
+    document.body.style.backgroundImage =
+      "url(images/photo-1533578448779-71eb335c0d95.webp)";
+  }
+};
