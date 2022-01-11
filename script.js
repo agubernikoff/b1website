@@ -3,6 +3,7 @@ const shgif = document.querySelector(".gif");
 const sh1 = document.querySelector(".heezy");
 const spew = document.querySelector(".for-now");
 const link = document.querySelector(".links");
+const btn = document.querySelector("button");
 const greeting = [
   "CLICK THE IMAGE TO BEGIN",
   "WHEN THE ANIMATION STOPS CLICK THE IMAGE TO ENTER",
@@ -33,7 +34,10 @@ shgif.addEventListener("click", function () {
 });
 document.body.onkeydown = function (e) {
   if (e.keyCode == 32) {
-    document.body.style.backgroundImage =
-      "url(images/photo-1533578448779-71eb335c0d95.webp)";
+    document.body.classList.toggle("space");
   }
 };
+function alertMsg() {
+  alert("Thanks for pressing me!");
+  btn.innerHTML = "I have been pressed!";
+}
