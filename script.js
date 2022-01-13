@@ -42,7 +42,3 @@ document.body.onkeydown = function (e) {
     }
   }
 };
-/*function alertMsg() {
-  alert("Thanks for pressing me!");
-  btn.innerHTML = "I have been pressed!";
-}*/
