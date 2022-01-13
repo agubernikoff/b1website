@@ -35,9 +35,14 @@ shgif.addEventListener("click", function () {
 document.body.onkeydown = function (e) {
   if (e.keyCode == 32) {
     document.body.classList.toggle("space");
+    if (btn.innerHTML === "Press Me!") {
+      btn.innerHTML = "Press Me...in space!!";
+    } else {
+      btn.innerHTML = "Press Me!";
+    }
   }
 };
-function alertMsg() {
+/*function alertMsg() {
   alert("Thanks for pressing me!");
   btn.innerHTML = "I have been pressed!";
-}
+}*/
