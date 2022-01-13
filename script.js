@@ -4,6 +4,7 @@ const sh1 = document.querySelector(".heezy");
 const spew = document.querySelector(".for-now");
 const link = document.querySelector(".links");
 const btn = document.querySelector("button");
+const ifYou = document.querySelector(".ifYou");
 const greeting = [
   "CLICK THE IMAGE TO BEGIN",
   "WHEN THE ANIMATION STOPS CLICK THE IMAGE TO ENTER",
@@ -40,5 +41,6 @@ document.body.onkeydown = function (e) {
     } else {
       btn.innerHTML = "Press Me!";
     }
+    ifYou.classList.toggle("hidden");
   }
 };
