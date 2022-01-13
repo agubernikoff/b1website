@@ -25,7 +25,6 @@ const start2 = function () {
   sh1.innerHTML = greeting[2];
   spew.classList.remove("unavailable");
   link.classList.remove("hidden");
-  const btn = document.querySelector("button");
   btn.removeAttribute("hidden");
 };
 shimg1.addEventListener("click", function () {
@@ -43,6 +42,11 @@ document.body.onkeydown = function (e) {
       btn.innerHTML = "Press Me!";
     }
     ifYou.classList.toggle("hidden");
-    apology.classList.toggle("hidden");
+    if (Boolean(apology.classList.contains("hidden")) === false) {
+      apology.classList.add("hidden");
+    }
   }
 };
+ifYou.addEventListener("mouseover", function () {
+  apology.classList.remove("hidden");
+});
