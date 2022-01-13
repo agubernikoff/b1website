@@ -71,3 +71,7 @@ a:hover {
 a:visited {
   color: grey;
 }
+.apology {
+  color: white;
+  text-align: center;
+}

@@ -5,6 +5,7 @@ const spew = document.querySelector(".for-now");
 const link = document.querySelector(".links");
 const btn = document.querySelector("button");
 const ifYou = document.querySelector(".ifYou");
+const apology = document.querySelector(".apology");
 const greeting = [
   "CLICK THE IMAGE TO BEGIN",
   "WHEN THE ANIMATION STOPS CLICK THE IMAGE TO ENTER",
@@ -42,5 +43,6 @@ document.body.onkeydown = function (e) {
       btn.innerHTML = "Press Me!";
     }
     ifYou.classList.toggle("hidden");
+    apology.classList.toggle("hidden");
   }
 };
