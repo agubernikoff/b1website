@@ -12,17 +12,17 @@ const greeting = [
   "WELCOME",
 ];
 
-sh1.innerHTML = greeting[0];
+sh1.innerText = greeting[0];
 
 const start = function () {
   shimg1.classList.add("hidden");
   shgif.classList.remove("hidden");
-  sh1.innerHTML = greeting[1];
+  sh1.innerText = greeting[1];
 };
 const start2 = function () {
   shgif.classList.add("fade");
   sh1.classList.add("tran");
-  sh1.innerHTML = greeting[2];
+  sh1.innerText = greeting[2];
   spew.classList.remove("unavailable");
   link.classList.remove("hidden");
   btn.removeAttribute("hidden");
@@ -36,10 +36,10 @@ shgif.addEventListener("click", function () {
 document.body.onkeydown = function (e) {
   if (e.keyCode == 32) {
     document.body.classList.toggle("space");
-    if (btn.innerHTML === "Press Me!") {
-      btn.innerHTML = "Press Me...in space!!";
+    if (btn.innerText === "Press Me!") {
+      btn.innerText = "Press Me...in space!!";
     } else {
-      btn.innerHTML = "Press Me!";
+      btn.innerText = "Press Me!";
     }
     ifYou.classList.toggle("hidden");
     if (Boolean(apology.classList.contains("hidden")) === false) {
